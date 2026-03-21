@@ -1,0 +1,95 @@
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* setting up colors to use for the website */
+:root {
+    --cream: #fffdf6;
+    --ivory: #f5f5dc;
+    --dark: #0d0c0a;
+    --carbon: #333333;
+    --gold: #d4af37;
+    --boarder: rgba(201, 168, 76, 0.25);
+    --rust: #8b3a2a
+    --gold-light: #e8c97a;
+    --muted: #6b6560
+}
+
+body{
+    background-color: var(--dark);
+    color: var(--cream);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+overflow-x: hidden;
+cursor: none;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* nav styles */
+nav {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+padding: 28px 60px;
+width: 100%;
+background-color: var(--muted);
+}
+
+.nav-links  {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    opacity: 0.9;
+    transition: opacity 0.2s ease ease-in-out;
+}
+
+
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--cream);
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-logo {
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 1.5em;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    color: var(--gold);
+}
+
+
+.nav-cta{
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--gold);
+    padding: 10px 24px;
+border-radius: 4px;
+}
+
+.nav-cta:hover {
+    background: var(--boarder);
+    color: var(--gold-light);
+}

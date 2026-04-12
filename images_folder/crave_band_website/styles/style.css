@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* likely colors for the website */
+:root {
+    --dark: #1a1916;
+    --cream: #fffdf6;
+    --ivory: #f5f5dc;
+    --carbon: #333333;
+    --gold: #d4af37;
+    --boarder: rgba(201, 168, 76, 0.25);
+    --rust: #8b3a2a
+    --gold-light: #e8c97a;
+    --muted: #6b6560
+}
+
+
+/* Body Styles */
+body {
+    background-color: var(--dark);
+    color: var(--cream);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/********** Nav Styles **********/
+nav {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 28px 60px;
+    width: 100%;
+    background-color: var(--cream);
+}
+
+
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}

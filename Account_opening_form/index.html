@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Opening Form</title>
+</head>
+
+<body>
+<main class="page-wrap">
+<section class="hero">
+<h1>Account Opening Form</h1>
+<p>Please provide your details to create a new account.</p>
+</section>
+
+<form class="form-container">
+<fieldset class="section personal-info">
+<legend>Personal Details</legend>
+<div class="field-row">
+<label for="first-name">First Name</label>
+<input id="first-name" name="first-name" type="text" placeholder="First Name" required>
+<label for="last-name">Last Name</label>
+<input id="last-name" name="last-name" type="text" placeholder="Last Name" required>
+</div>
+<div class="field-row">
+<label for="dob">Date of Birth</label>
+<input id="dob" name="dob" type="date" required>
+<label for="gender">Gender</label>
+<select id="gender" name="gender" required>
+<option value="">Select Gender</option>
+<option value="female">Female</option>
+<option value="male">Male</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="field-row">
+<label for="phone">Phone Number</label>
+<input id="phone" name="phone" type="tel" placeholder="+234 800 000 0000" required>
+<label for="email">Email Address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com" required>
+</div>
+<label for="address">Full Address</label>
+<textarea id="address" name="address" rows="3" placeholder="Street, City, State, ZIP" required></textarea>
+</fieldset>
+
+<fieldset class="section external-contact">
+<legend>Next of Kin / External Contact</legend>
+<div class="field-row">
+<label for="kin-first-name">First Name</label>
+<input id="kin-first-name" name="kin-first-name" type="text" placeholder="First Name" required>
+<label for="kin-last-name">Last Name</label>
+<input id="kin-last-name" name="kin-last-name" type="text" placeholder="Last Name" required>
+</div>
+<div class="field-row">
+<label for="kin-phone">Phone Number</label>
+<input id="kin-phone" name="kin-phone" type="tel" placeholder="+234 800 000 0000" required>
+<label for="kin-email">Email Address</label>
+<input id="kin-email" name="kin-email" type="email" placeholder="kin@example.com" required>
+</div>
+</fieldset>
+
+<fieldset class="section account-info">
+<legend>Account Information</legend>
+<div class="field-row">
+<label for="account-type">Account Type</label>
+<select id="account-type" name="account-type" required>
+<option value="">Choose Account Type</option>
+<option value="savings">Savings</option>
+<option value="current">Current</option>
+<option value="domiciliary">Domiciliary</option>
+</select>
+<label for="id-type">ID Type</label>
+<select id="id-type" name="id-type" required>
+<option value="">Choose ID Type</option>
+<option value="voters-card">Voter's Card</option>
+<option value="drivers-license">Driver's License</option>
+<option value="passport">International Passport</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="field-row">
+<label for="id-number">ID Number</label>
+<input id="id-number" name="id-number" type="text" placeholder="ID Number" required>
+</div>
+</fieldset>
+
+<fieldset class="section security-info">
+<legend>Security</legend>
+<div class="field-row">
+<label for="password">Password</label>
+<input id="password" name="password" type="password" placeholder="Create Password" required>
+<label for="confirm-password">Confirm Password</label>
+<input id="confirm-password" name="confirm-password" type="password" placeholder="Confirm Password" required>
+</div>
+</fieldset>
+
+<div class="form-actions">
+<button type="submit">Open Account</button>
+</div>
+</form>
+</main>
+</body>
+</html>

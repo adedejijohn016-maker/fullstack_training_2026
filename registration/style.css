@@ -1,0 +1,217 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+    background:#f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+/* ===========================
+   FORM CONTAINER
+=========================== */
+
+.container{
+    width:100%;
+    max-width:850px;
+    background:#fff;
+    border-radius:12px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.form-title{
+    text-align:center;
+    color:#0a6c38;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+/* ===========================
+   FIELDSET
+=========================== */
+
+fieldset{
+    border:2px solid #0a6c38;
+    border-radius:10px;
+    padding:25px;
+    margin-bottom:25px;
+}
+
+legend{
+    padding:0 10px;
+    color:#0a6c38;
+    font-weight:600;
+    font-size:1.1rem;
+}
+
+/* ===========================
+   GRID LAYOUT
+=========================== */
+
+.form-container{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+fieldset{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* Address takes full width */
+
+.input-group:last-child{
+    grid-column:1 / -1;
+}
+
+/* ===========================
+   INPUT GROUP
+=========================== */
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    font-weight:500;
+    color:#333;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+textarea{
+    resize:vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#0a6c38;
+    box-shadow:0 0 8px rgba(10,108,56,.2);
+}
+
+/* ===========================
+   CHECKBOX
+=========================== */
+
+.checkbox-group{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:15px;
+}
+
+.checkbox-group input{
+    width:18px;
+    height:18px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.button-group{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+}
+
+button{
+    padding:14px 28px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+button[type="reset"]{
+    background:#d9d9d9;
+    color:#333;
+}
+
+button[type="reset"]:hover{
+    background:#bdbdbd;
+}
+
+button[type="submit"]{
+    background:#0a6c38;
+    color:white;
+}
+
+button[type="submit"]:hover{
+    background:#07562d;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+    .container{
+        padding:20px;
+    }
+
+    fieldset{
+        grid-template-columns:1fr;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+
+    .form-title{
+        font-size:1.6rem;
+    }
+}
